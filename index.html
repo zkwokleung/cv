@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Curriculum vitae of SZE-TO Kwok Leung, Full-Stack Software Developer"
+    />
+    <title>SZE-TO Kwok Leung - Curriculum Vitae</title>
+    <style>
+      :root {
+        --ink: #17232c;
+        --muted: #53636d;
+        --accent: #195f78;
+        --line: #cbd6dc;
+        --soft: #f3f7f9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        background: #e8edf0;
+      }
+      body {
+        background: #e8edf0;
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9.35pt;
+        line-height: 1.29;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .page {
+        position: relative;
+        width: 210mm;
+        min-height: 297mm;
+        margin: 10mm auto;
+        padding: 11.8mm 14.5mm 11mm;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.14);
+      }
+
+      .page + .page {
+        page-break-before: always;
+      }
+
+      .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 9mm;
+        align-items: end;
+        margin-bottom: 3.8mm;
+        padding-bottom: 3.6mm;
+        border-bottom: 2px solid var(--accent);
+      }
+
+      h1 {
+        margin: 0 0 1.6mm;
+        color: #102832;
+        font-size: 21.5pt;
+        line-height: 1;
+        letter-spacing: 0.2px;
+      }
+
+      .headline {
+        color: var(--accent);
+        font-size: 10.8pt;
+        font-weight: 700;
+        letter-spacing: 0.35px;
+      }
+
+      .contact {
+        color: var(--muted);
+        font-size: 8.45pt;
+        line-height: 1.42;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      .continuation-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8mm;
+        margin-bottom: 3mm;
+        padding-bottom: 2.2mm;
+        border-bottom: 1px solid var(--accent);
+      }
+
+      .continuation-name {
+        color: #102832;
+        font-size: 11.2pt;
+        font-weight: 700;
+        letter-spacing: 0.25px;
+      }
+
+      .continuation-role {
+        color: var(--accent);
+        font-size: 8.2pt;
+        font-weight: 700;
+        letter-spacing: 0.35px;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      section {
+        margin-top: 3.25mm;
+      }
+
+      h2 {
+        margin: 0 0 1.85mm;
+        padding-bottom: 1.1mm;
+        border-bottom: 1px solid var(--line);
+        color: var(--accent);
+        font-size: 10.55pt;
+        line-height: 1.1;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0;
+      }
+      .summary {
+        color: #2b3d47;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.45mm 7mm;
+        padding: 2.7mm 3.3mm;
+        border-left: 3px solid var(--accent);
+        background: var(--soft);
+      }
+
+      .skill-row {
+        display: grid;
+        grid-template-columns: 27mm 1fr;
+        gap: 1.5mm;
+      }
+
+      .skill-label {
+        color: #203843;
+        font-weight: 700;
+      }
+      .skill-value {
+        color: #354a55;
+      }
+
+      .job {
+        margin-bottom: 3.1mm;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .job:last-child {
+        margin-bottom: 0;
+      }
+
+      .job-head {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 5mm;
+        align-items: baseline;
+        margin-bottom: 0.9mm;
+      }
+
+      .role {
+        color: #122e39;
+        font-size: 10pt;
+        font-weight: 700;
+      }
+      .company {
+        color: var(--accent);
+        font-weight: 700;
+      }
+      .date {
+        color: var(--muted);
+        font-size: 8.55pt;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      ul {
+        margin: 1.05mm 0 0 4mm;
+        padding: 0;
+      }
+      li {
+        margin: 0 0 0.62mm;
+        padding-left: 0.5mm;
+      }
+      li::marker {
+        color: var(--accent);
+      }
+
+      .tech {
+        margin-top: 0.85mm;
+        color: #465b66;
+        font-size: 8.35pt;
+      }
+      .tech strong {
+        color: #263d48;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.2mm;
+      }
+
+      .project {
+        padding: 0 0 2mm 2.8mm;
+        border-left: 2px solid var(--line);
+        border-bottom: 1px dotted #dbe3e7;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .project:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .project-title {
+        margin-bottom: 0.55mm;
+        color: #173642;
+        font-weight: 700;
+      }
+
+      .project-link {
+        margin-left: 1.5mm;
+        color: var(--accent);
+        font-size: 7.6pt;
+        font-weight: 700;
+        letter-spacing: 0.35px;
+        text-transform: uppercase;
+      }
+
+      .project-desc {
+        color: #334a55;
+      }
+      .project-tech {
+        margin-top: 0.75mm;
+        color: var(--muted);
+        font-size: 8.25pt;
+      }
+
+      .education-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 6mm;
+        align-items: start;
+      }
+
+      .edu {
+        margin-bottom: 2.7mm;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .edu:last-child {
+        margin-bottom: 0;
+      }
+
+      .edu-head {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 4mm;
+      }
+
+      .degree {
+        color: #183642;
+        font-weight: 700;
+      }
+      .school {
+        margin-top: 0.35mm;
+        color: var(--accent);
+        font-weight: 700;
+      }
+      .edu-details {
+        margin-top: 0.85mm;
+        color: #354a55;
+      }
+      .coursework {
+        margin-top: 0.7mm;
+        color: #455a65;
+        font-size: 8.45pt;
+      }
+
+      .language-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.7mm;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .language-list li {
+        margin: 0;
+        padding: 0;
+      }
+
+      .footer {
+        position: absolute;
+        right: 14.5mm;
+        bottom: 5mm;
+        color: #7c8991;
+        font-size: 7.55pt;
+      }
+
+      .screen-note {
+        display: none;
+      }
+
+      @media screen and (max-width: 900px) {
+        .page {
+          width: calc(100% - 24px);
+          min-height: auto;
+          margin: 12px auto;
+        }
+        .header {
+          grid-template-columns: 1fr;
+          align-items: start;
+        }
+        .contact {
+          text-align: left;
+          white-space: normal;
+        }
+        .continuation-header {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 0.8mm;
+        }
+        .continuation-role {
+          white-space: normal;
+        }
+        .skills,
+        .projects,
+        .education-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        html,
+        body {
+          background: #fff;
+        }
+        body {
+          font-size: 9.35pt;
+        }
+        .page {
+          width: 210mm;
+          height: 297mm;
+          min-height: 297mm;
+          margin: 0;
+          box-shadow: none;
+          page-break-after: always;
+        }
+        .page:last-child {
+          page-break-after: auto;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div>
+          <h1>SZE-TO KWOK LEUNG</h1>
+          <div class="headline">FULL-STACK SOFTWARE DEVELOPER</div>
+        </div>
+        <div class="contact">
+          <div>Wong Tai Sin, Hong Kong</div>
+          <div>
+            <a href="tel:+85266288537">+852 6628 8537</a> &nbsp;|&nbsp;
+            <a href="mailto:klszeto020@gmail.com">klszeto020@gmail.com</a>
+          </div>
+          <div>
+            <a href="https://portfolio.andrewszeto.com"
+              >portfolio.andrewszeto.com</a
+            >
+            &nbsp;|&nbsp;
+            <a href="https://github.com/zkwokleung">github.com/zkwokleung</a>
+          </div>
+        </div>
+      </header>
+
+      <section aria-labelledby="summary-title">
+        <h2 id="summary-title">Professional Summary</h2>
+        <p class="summary">
+          Full-stack software developer experienced in building production web
+          applications, Stripe-integrated campaign sites, Payload CMS-backed
+          platforms and research applications. Skilled in Next.js, React,
+          Laravel, TypeScript and PHP, with practical experience in REST API
+          development, relational database design, containerised deployment,
+          workflow automation and AI/ML model development and integration.
+        </p>
+      </section>
+
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical Skills</h2>
+        <div class="skills">
+          <div class="skill-row">
+            <div class="skill-label">Core Development</div>
+            <div class="skill-value">
+              TypeScript, JavaScript, PHP, C#, React, Next.js, Laravel, Node.js,
+              MySQL, REST APIs
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">Additional Experience</div>
+            <div class="skill-value">
+              Python, C, C++, SQL, Swift, Lua, NestJS, Express, Flutter, Unity,
+              AppKit, SwiftUI
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">Architecture</div>
+            <div class="skill-value">
+              OOP, SOLID, MVC, Repository Pattern, Service Layer, Dependency
+              Injection
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">Data &amp; CMS</div>
+            <div class="skill-value">
+              PostgreSQL, MongoDB, Redis, Firebase, Payload CMS, relational data
+              modelling
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">Cloud &amp; DevOps</div>
+            <div class="skill-value">
+              Docker, Kubernetes, AWS, Git, GitHub Actions, Unix/Linux,
+              PowerShell
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-label">Tooling &amp; AI/ML</div>
+            <div class="skill-value">
+              Stripe, n8n, Mocha, YOLOv8, dataset labelling, model training and
+              evaluation, computer-vision integration
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="experience-title">
+        <h2 id="experience-title">Professional Experience</h2>
+
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="role">Full-Stack Developer</span> &nbsp;·&nbsp;
+              <span class="company">She Communications Limited</span>
+            </div>
+            <div class="date">Sep 2024 - Present</div>
+          </div>
+          <ul>
+            <li>
+              Redeveloped a production beauty-product review platform using
+              Next.js and Laravel, improving functionality, user experience,
+              performance and maintainability.
+            </li>
+            <li>
+              Built a campaign website with Stripe payment integration,
+              implementing the checkout flow and synchronising payment and
+              transaction records between the frontend and backend.
+            </li>
+            <li>
+              Developed full-stack websites with Payload CMS, implementing
+              content models, administrative workflows, REST APIs, database
+              schemas and responsive interfaces.
+            </li>
+            <li>
+              Automated recurring operations and SEO-content workflows with n8n,
+              and deployed and configured an internally hosted LLM on local
+              infrastructure to support secure in-house workflows.
+            </li>
+            <li>
+              Improved technical SEO and Core Web Vitals through structured
+              data, semantic HTML and metadata optimisation; supported
+              containerised deployment with Docker and Kubernetes.
+            </li>
+          </ul>
+          <div class="tech">
+            <strong>Technologies:</strong> Next.js, React, TypeScript, Laravel,
+            PHP, MySQL, Payload CMS, Stripe, Docker, Kubernetes, n8n
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="role">Game Developer</span> &nbsp;·&nbsp;
+              <span class="company">The Chinese University of Hong Kong</span>
+            </div>
+            <div class="date">Dec 2021 - Present</div>
+          </div>
+          <ul>
+            <li>
+              Developed educational applications for radiology training using
+              Unity and Flutter, translating research and clinical requirements
+              into interactive learning experiences.
+            </li>
+            <li>
+              Integrated a machine-learning model for detecting abnormal
+              nasogastric-tube placement in collaboration with a PhD research
+              team specialising in artificial intelligence.
+            </li>
+            <li>
+              Implemented application logic, user interfaces, data flows and
+              cross-platform functionality, and supported iterative testing with
+              research stakeholders.
+            </li>
+          </ul>
+          <div class="tech">
+            <strong>Technologies:</strong> Unity, C#, Flutter, Python, machine
+            learning, computer vision
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="role">Software Engineer</span> &nbsp;·&nbsp;
+              <span class="company">DigiGear Technology Limited</span>
+            </div>
+            <div class="date">Jun 2023 - Aug 2023</div>
+          </div>
+          <ul>
+            <li>
+              Developed a full-stack online ticketing platform, contributing to
+              its application structure, user-facing interfaces, backend
+              workflows and database design.
+            </li>
+            <li>
+              Implemented ticket browsing and purchasing workflows across the
+              frontend, backend APIs and relational database.
+            </li>
+            <li>
+              Used Mocha to write automated tests for application logic and API
+              behaviour.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <div class="footer">Page 1 of 2</div>
+    </main>
+
+    <main class="page">
+      <header class="continuation-header" aria-label="CV continuation header">
+        <div class="continuation-name">SZE-TO KWOK LEUNG</div>
+        <div class="continuation-role">Full-Stack Software Developer</div>
+      </header>
+
+      <section aria-labelledby="experience-continued-title">
+        <h2 id="experience-continued-title">Professional Experience</h2>
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="role">Game Developer Intern</span> &nbsp;·&nbsp;
+              <span class="company">MedMind Technology Limited</span>
+            </div>
+            <div class="date">Jun 2020 - Aug 2020</div>
+          </div>
+          <ul>
+            <li>
+              Delivered an online multiplayer Mahjong mode within three weeks
+              using Unity, C# and Photon API under a tight production deadline.
+            </li>
+            <li>
+              Implemented room management, session handling and gameplay
+              synchronisation for real-time multiplayer matches.
+            </li>
+            <li>
+              The multiplayer mode was subsequently promoted as a key selling
+              feature during the COVID-19 pandemic.
+            </li>
+          </ul>
+          <div class="tech">
+            <strong>Technologies:</strong> Unity, C#, Photon API, multiplayer
+            networking
+          </div>
+        </article>
+      </section>
+
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Selected Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <div class="project-title">
+              <a href="https://github.com/zkwokleung/shortcut-wheel"
+                >Shortcut Wheel</a
+              ><span class="project-link">GitHub</span>
+            </div>
+            <p class="project-desc">
+              Built a native macOS menu-bar utility that opens a radial shortcut
+              menu from a global key or mouse trigger. Supports keystrokes,
+              apps, URLs, scripts, nested wheels, persistent configuration and
+              automated release builds for both Apple Silicon and Intel Macs.
+            </p>
+            <div class="project-tech">
+              Swift · AppKit · SwiftUI · CGEventTap · GitHub Actions
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-title">
+              <a href="https://github.com/zkwokleung/karabiner-config-editor"
+                >Karabiner Config Editor</a
+              ><span class="project-link">GitHub</span>
+            </div>
+            <p class="project-desc">
+              Created a visual editor for importing, editing, validating and
+              exporting Karabiner-Elements configurations, with drag-and-drop
+              complex rules, profile- and device-level mappings, and ANSI, ISO
+              and JIS keyboard layouts.
+            </p>
+            <div class="project-tech">
+              Next.js · React · TypeScript · Tailwind CSS · shadcn/ui
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-title">
+              <a
+                href="https://github.com/zkwokleung/Flow.Launcher.Plugin.GitEasy"
+                >Git Easy</a
+              ><span class="project-link">GitHub</span>
+            </div>
+            <p class="project-desc">
+              Developed a Flow Launcher plugin for cloning, opening and fetching
+              repositories from the keyboard, with fuzzy search, multiple
+              repository folders and direct opening in VS Code or File Explorer.
+            </p>
+            <div class="project-tech">
+              C# · .NET · Flow Launcher Plugin API · Git
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-title">
+              <a href="https://github.com/zkwokleung/surgical-counting-frontend"
+                >Surgical Counting Computer Vision System</a
+              ><span class="project-link">GitHub</span>
+            </div>
+            <p class="project-desc">
+              Developed and trained a YOLOv8 model for surgical-item counting
+              using a dataset provided by Blueinno Technology HK. Labelled the
+              dataset, achieved 99% accuracy on the test dataset, and built a
+              cross-platform Flutter application that integrated the model.
+            </p>
+            <div class="project-tech">
+              Python · YOLOv8 · Dataset Labelling · Model Training and
+              Evaluation · Flutter
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="education-grid">
+          <div>
+            <article class="edu">
+              <div class="edu-head">
+                <div>
+                  <div class="degree">
+                    B.Eng. in Computer Engineering, First Class Honours
+                  </div>
+                  <div class="school">
+                    The Chinese University of Hong Kong (CUHK)
+                  </div>
+                </div>
+                <div class="date">2020 - 2024</div>
+              </div>
+              <div class="edu-details">
+                Cumulative GPA: 3.498/4.000 · Major GPA: 3.562/4.000 · Dean's
+                List 2021-2022
+              </div>
+              <div class="coursework">
+                <strong>Relevant coursework:</strong> Software Engineering, Data
+                Structures, Operating Systems, Algorithms, Computer Organisation
+                and Design, Cloud Computing and Storage.
+              </div>
+            </article>
+
+            <article class="edu">
+              <div class="edu-head">
+                <div>
+                  <div class="degree">
+                    Higher Diploma in Game Software Development
+                  </div>
+                  <div class="school">
+                    Hong Kong Institute of Vocational Education (HKIVE)
+                  </div>
+                </div>
+                <div class="date">2018 - 2020</div>
+              </div>
+              <div class="edu-details">Award GPA: 3.76/4.00</div>
+            </article>
+          </div>
+
+          <section aria-labelledby="languages-title" style="margin-top: 0">
+            <h2 id="languages-title">Languages</h2>
+            <ul class="language-list">
+              <li><strong>Cantonese</strong> - Native</li>
+              <li><strong>Mandarin</strong> - Fluent</li>
+              <li><strong>English</strong> - Fluent</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <div class="footer">Page 2 of 2</div>
+    </main>
+  </body>
+</html>
