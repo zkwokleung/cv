@@ -5,6 +5,7 @@ Source for the online curriculum vitae of SZE-TO Kwok Leung, Andrew.
 - Live CV: <https://cv.andrewszeto.com>
 - Portfolio: <https://portfolio.andrewszeto.com>
 - GitHub profile: <https://github.com/zkwokleung>
+- LinkedIn profile: <https://www.linkedin.com/in/skwokleung/>
 
 ## Preview locally
 
